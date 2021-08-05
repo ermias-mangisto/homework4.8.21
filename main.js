@@ -147,10 +147,10 @@
 
 // ................................................................
 
-var height=Number(prompt("height"))
-var width=Number(prompt("width"))
-console.log(height*2 + width*2)
-console.log(height*width)
+// var height=Number(prompt("height"))
+// var width=Number(prompt("width"))
+// console.log(height*2 + width*2)
+// console.log(height*width)
 // .............................................
 
 
@@ -168,11 +168,11 @@ console.log(height*width)
 // }
 
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-// var num = +prompt("enter a number");
-// var numbers = [];
-// for(var i=0; i<num.toString().length;i++){
-//     if(num > 0){
-//         numbers[i] = num.toString().charAt(i);
-//         console.log(numbers[i]);
-//     }
-// }
+
+var num = Number(prompt("enter a number"));
+while(num>0){
+var mod=num%10
+num=(num/10)-(mod/10)
+console.log(mod)
+
+}
